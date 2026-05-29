@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GT vs RR · AI Insight · IPL 2026 Qualifier 2</title>
+<style>
+:root { color-scheme: light; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; display: flex; justify-content: center; padding: 24px 16px; min-height: 100vh; }
+.phone { width: 100%; max-width: 380px; background: #fff; border-radius: 20px; border: 1px solid #e0e0e0; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+.header { padding: 14px 16px 12px; border-bottom: 1px solid #f0f0f0; }
+.header-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2px; }
+.header-title { font-size: 15px; font-weight: 600; color: #111; }
+.header-counter { font-size: 12px; color: #999; }
+.header-sub { font-size: 12px; color: #888; }
+.ai-badge { display: inline-flex; align-items: center; gap: 4px; background: #f0ecff; color: #5b3fd4; font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 20px; margin-bottom: 6px; }
+.content { padding: 16px; min-height: 280px; }
+.chunk-label { font-size: 11px; color: #aaa; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+.chunk-title { font-size: 17px; font-weight: 600; color: #111; line-height: 1.35; margin-bottom: 12px; }
+
+/* Block: text */
+.block-text { font-size: 14px; color: #444; line-height: 1.65; margin-bottom: 10px; }
+
+/* Block: stat_row */
+.block-stat-row { display: flex; gap: 10px; margin: 4px 0 10px; }
+.stat-box { flex: 1; background: #f8f8f8; border: 1px solid #ebebeb; border-radius: 10px; padding: 10px; text-align: center; }
+.stat-box .val { font-size: 22px; font-weight: 700; color: #111; }
+.stat-box .lbl { font-size: 11px; color: #767676; margin-top: 2px; }
+.stat-box.primary .val { color: #5b3fd4; }
+.stat-box.secondary .val { color: #e07b00; }
+.stat-box.neutral .val { color: #888; }
+
+/* Block: table */
+.table-scroll { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 4px 0 10px; }
+.block-table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 200px; }
+.block-table th { text-align: left; padding: 6px 8px 6px 0; color: #767676; font-weight: 500; border-bottom: 1px solid #f0f0f0; white-space: nowrap; }
+.block-table th.c { text-align: center; }
+.block-table td { padding: 7px 8px 7px 0; color: #333; border-bottom: 1px solid #f7f7f7; vertical-align: middle; }
+.block-table td.c { text-align: center; }
+
+/* Block: form_strip */
+.block-form { margin-bottom: 10px; }
+.form-team { font-size: 12px; font-weight: 600; color: #555; margin-bottom: 5px; }
+.form-boxes { display: flex; gap: 5px; margin-bottom: 8px; }
+.form-box { width: 36px; height: 36px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; }
+.form-box.W { background: #e8f8ef; color: #1a7a3f; }
+.form-box.L { background: #fdf0f0; color: #c0392b; }
+.form-box.D { background: #f5f5f5; color: #555; }
+
+/* Block: matchup */
+.block-matchup { display: flex; align-items: center; justify-content: space-around; padding: 12px 0 8px; }
+.matchup-player { text-align: center; }
+.matchup-player .name { font-size: 14px; font-weight: 600; color: #111; }
+.matchup-player .role { font-size: 11px; color: #767676; margin-top: 3px; }
+.matchup-sep { font-size: 18px; color: #ccc; font-weight: 600; }
+
+/* Block: highlight */
+.block-highlight { background: #f8f5ff; border: 1px solid #ddd6fe; border-radius: 8px; padding: 10px 12px; margin-bottom: 10px; font-size: 13px; color: #4c3a9e; line-height: 1.55; }
+
+/* Block: alert — flex layout for icon + text */
+.block-alert { border-radius: 8px; padding: 10px 12px; margin-bottom: 10px; font-size: 13px; line-height: 1.55; display: flex; gap: 8px; align-items: flex-start; }
+.block-alert .alert-icon { flex-shrink: 0; font-size: 14px; line-height: 1.55; }
+.block-alert.warning { background: #fffbee; border: 1px solid #ffe082; color: #7a5c00; }
+.block-alert.info    { background: #f0f7ff; border: 1px solid #bfdbfe; color: #1e4e8c; }
+.block-alert.success { background: #e8f8ef; border: 1px solid #a7f3d0; color: #1a7a3f; }
+/* Note: 'danger' level is reserved for FLS INVALIDATED system state — model should not emit it */
+.block-alert.danger  { background: #fdf0f0; border: 1px solid #fca5a5; color: #9b1c1c; }
+
+/* Badges */
+.badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 6px; }
+.badge.win      { background: #e8f8ef; color: #1a7a3f; }
+.badge.loss     { background: #fdf0f0; color: #c0392b; }
+.badge.primary  { background: #f0ecff; color: #5b3fd4; }
+.badge.secondary{ background: #fff4e0; color: #b06000; }
+.badge.neutral  { background: #f5f5f5; color: #555; }
+
+/* Nav — min 44px touch targets */
+.nav { display: flex; gap: 10px; padding: 12px 16px 14px; border-top: 1px solid #f0f0f0; }
+.btn { flex: 1; padding: 10px; min-height: 44px; border-radius: 10px; font-size: 14px; font-weight: 500; cursor: pointer; border: 1px solid #e0e0e0; background: #fff; color: #444; }
+.btn.primary { background: #5b3fd4; border-color: #5b3fd4; color: #fff; }
+.btn:disabled { opacity: 0.35; cursor: default; }
+
+/* Dot bar with chunk label */
+.progress-bar { padding: 6px 16px 2px; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.dots { display: flex; gap: 5px; justify-content: center; }
+.dot { height: 5px; border-radius: 3px; background: #e0e0e0; transition: all 0.2s; }
+.dot.active { background: #5b3fd4; }
+.chunk-progress-label { font-size: 11px; color: #aaa; text-align: center; }
+
+/* Disclaimer — fixed for WCAG contrast: 12px min, #767676 min on white */
+.disclaimer { text-align: center; font-size: 12px; color: #767676; padding: 0 16px 14px; line-height: 1.5; }
+
+/* Loading skeleton */
+.skeleton { animation: shimmer 1.4s infinite linear; background: linear-gradient(90deg, #f0f0f0 25%, #e4e4e4 50%, #f0f0f0 75%); background-size: 200% 100%; border-radius: 6px; }
+@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+.sk-line { height: 14px; margin-bottom: 10px; }
+.sk-title { height: 22px; width: 80%; margin-bottom: 12px; }
+.sk-label { height: 10px; width: 40%; margin-bottom: 8px; }
+.sk-stat { display: flex; gap: 10px; margin-bottom: 10px; }
+.sk-stat-box { flex: 1; height: 64px; border-radius: 10px; }
+
+/* Empty state */
+.empty-state { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 240px; gap: 8px; padding: 24px; text-align: center; }
+.empty-state .empty-icon { font-size: 32px; }
+.empty-state .empty-title { font-size: 15px; font-weight: 600; color: #333; }
+.empty-state .empty-body { font-size: 13px; color: #767676; line-height: 1.5; }
+</style>
+</head>
+<body>
+<div class="phone">
+  <div class="header">
+    <div class="ai-badge">&#10024; AI Insight</div>
+    <div class="header-top">
+      <div class="header-title" id="event-title">GT vs RR &middot; Qualifier 2</div>
+      <div class="header-counter" id="counter"></div>
+    </div>
+    <div class="header-sub" id="event-sub">IPL 2026 &middot; Mullanpur &middot; 7:30 PM IST</div>
+  </div>
+  <div class="content" id="content"></div>
+  <div class="progress-bar" id="progress-bar">
+    <div class="dots" id="dots"></div>
+    <div class="chunk-progress-label" id="chunk-label"></div>
+  </div>
+  <div class="nav">
+    <button class="btn" id="btn-prev" onclick="go(-1)">&#8592; Previous</button>
+    <button class="btn primary" id="btn-next" onclick="go(1)">Next &#8594;</button>
+  </div>
+  <div class="disclaimer" id="disclaimer">Generated before match start &middot; May not reflect live events</div>
+</div>
+
+<script>
+/* ── DATA: loaded from data.json — edit that file to update content ── */
+let insight = null;
+
+/* ── RENDERER: FE block components ── */
+const ALERT_ICONS = { warning: "⚠", info: "ℹ", success: "✓", danger: "✕" };
+
+function renderBlock(block) {
+  switch (block.type) {
+
+    case "text":
+      return `<p class="block-text">${block.content}</p>`;
+
+    case "stat_row":
+      return `<div class="block-stat-row" role="list">${block.items.map(item =>
+        `<div class="stat-box ${item.accent || ''}" role="listitem" aria-label="${item.value} ${item.label}">
+          <div class="val" aria-hidden="true">${item.value}</div>
+          <div class="lbl" aria-hidden="true">${item.label}</div>
+        </div>`
+      ).join('')}</div>`;
+
+    case "table": {
+      const heads = block.headers.map(h =>
+        `<th class="${h.align === 'c' ? 'c' : ''}" scope="col">${h.text}</th>`
+      ).join('');
+      const rows = block.rows.map(row =>
+        `<tr>${row.map((cell, i) => {
+          if (typeof cell === 'string') return i === 0
+            ? `<td><strong style="font-weight:500">${cell}</strong></td>`
+            : `<td>${cell}</td>`;
+          const cls = cell.align === 'c' ? ' class="c"' : '';
+          const inner = cell.badge
+            ? `<span class="badge ${cell.badge}">${cell.text}</span>`
+            : cell.text;
+          return `<td${cls}>${inner}</td>`;
+        }).join('')}</tr>`
+      ).join('');
+      return `<div class="table-scroll"><table class="block-table"><thead><tr>${heads}</tr></thead><tbody>${rows}</tbody></table></div>`;
+    }
+
+    case "form_strip":
+      return `<div class="block-form">${block.teams.map(team =>
+        `<div class="form-team">${team.name}</div>
+         <div class="form-boxes" role="list" aria-label="${team.name} recent form">${team.results.map(r => {
+           const label = r === 'W' ? 'Win' : r === 'L' ? 'Loss' : 'Draw';
+           return `<div class="form-box ${r}" role="listitem" aria-label="${label}">${r}</div>`;
+         }).join('')}</div>`
+      ).join('')}</div>`;
+
+    case "matchup":
+      return `<div class="block-matchup" role="group" aria-label="Key matchup: ${block.home.name} vs ${block.away.name}">
+        <div class="matchup-player">
+          <div class="name">${block.home.name}</div>
+          <div class="role">${block.home.role}</div>
+        </div>
+        <div class="matchup-sep" aria-hidden="true">vs</div>
+        <div class="matchup-player">
+          <div class="name">${block.away.name}</div>
+          <div class="role">${block.away.role}</div>
+        </div>
+      </div>`;
+
+    case "highlight":
+      return `<div class="block-highlight" role="note">${block.content}</div>`;
+
+    case "alert": {
+      const level = block.level || 'info';
+      const icon = ALERT_ICONS[level] || 'ℹ';
+      const roleAttr = level === 'warning' || level === 'danger' ? 'role="alert"' : 'role="note"';
+      return `<div class="block-alert ${level}" ${roleAttr}>
+        <span class="alert-icon" aria-hidden="true">${icon}</span>
+        <span>${block.content}</span>
+      </div>`;
+    }
+
+    default:
+      return '';
+  }
+}
+
+/* ── EMPTY STATE ── */
+function renderEmpty() {
+  document.getElementById('counter').textContent = '';
+  document.getElementById('content').innerHTML = `
+    <div class="empty-state">
+      <div class="empty-icon">🔍</div>
+      <div class="empty-title">No insight available</div>
+      <div class="empty-body">AI analysis for this match isn't ready yet. Check back closer to match start.</div>
+    </div>`;
+  document.getElementById('dots').innerHTML = '';
+  document.getElementById('chunk-label').textContent = '';
+  document.getElementById('btn-prev').disabled = true;
+  document.getElementById('btn-next').disabled = true;
+}
+
+/* ── LOADING SKELETON ── */
+function renderSkeleton() {
+  document.getElementById('counter').textContent = '';
+  document.getElementById('content').innerHTML = `
+    <div class="skeleton sk-label"></div>
+    <div class="skeleton sk-title"></div>
+    <div class="skeleton sk-line" style="width:95%"></div>
+    <div class="skeleton sk-line" style="width:88%"></div>
+    <div class="skeleton sk-line" style="width:72%"></div>
+    <div class="sk-stat">
+      <div class="skeleton sk-stat-box"></div>
+      <div class="skeleton sk-stat-box"></div>
+    </div>
+    <div class="skeleton sk-line" style="width:90%"></div>
+    <div class="skeleton sk-line" style="width:60%"></div>`;
+  document.getElementById('dots').innerHTML = '';
+  document.getElementById('chunk-label').textContent = '';
+  document.getElementById('btn-prev').disabled = true;
+  document.getElementById('btn-next').disabled = true;
+}
+
+/* ── APP ── */
+let cur = 0;
+let chunks = [];
+let total = 0;
+
+function go(d) {
+  cur = Math.max(0, Math.min(total - 1, cur + d));
+  render();
+}
+
+function render() {
+  if (!insight || total === 0) { renderEmpty(); return; }
+
+  const chunk = chunks[cur];
+  const isLast = cur === total - 1;
+  const isFirst = cur === 0;
+
+  document.getElementById('counter').textContent = `${cur + 1} / ${total}`;
+  document.getElementById('content').innerHTML =
+    `<div class="chunk-label">${chunk.label}</div>` +
+    `<div class="chunk-title">${chunk.title}</div>` +
+    chunk.blocks.map(renderBlock).join('');
+
+  const prevBtn = document.getElementById('btn-prev');
+  const nextBtn = document.getElementById('btn-next');
+
+  prevBtn.disabled = isFirst;
+  prevBtn.setAttribute('aria-label', isFirst ? 'No previous chunk' : `Previous: ${chunks[cur - 1].label}`);
+
+  nextBtn.disabled = false;
+  nextBtn.innerHTML = isLast ? '&#10003; Done' : 'Next &#8594;';
+  nextBtn.setAttribute('aria-label', isLast ? 'Done' : `Next: ${chunks[cur + 1].label}`);
+
+  document.getElementById('dots').innerHTML = chunks.map((c, i) =>
+    `<div class="dot${i === cur ? ' active' : ''}" style="width:${i === cur ? 18 : 6}px" role="presentation"></div>`
+  ).join('');
+
+  document.getElementById('chunk-label').textContent = `${chunk.label} · ${cur + 1} of ${total}`;
+}
+
+/* Load data.json then render */
+renderSkeleton();
+fetch('data.json')
+  .then(r => r.json())
+  .then(data => {
+    insight = data;
+    chunks = insight.chunks || [];
+    total = chunks.length;
+    document.getElementById('event-title').innerHTML = insight.meta.title;
+    document.getElementById('event-sub').textContent  = insight.meta.subtitle;
+    document.getElementById('disclaimer').textContent  = insight.meta.disclaimer;
+    render();
+  })
+  .catch(() => renderEmpty());
+</script>
+</body>
+</html>

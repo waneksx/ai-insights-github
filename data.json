@@ -1,0 +1,180 @@
+{
+  "insight_id": "rajasthan-royals-vs-gujarat-titans-slug",
+  "event_id": "event-1",
+  "generated_at": "2026-05-29T16:27:00Z",
+  "meta": {
+    "title": "Rajasthan Royals vs Gujarat Titans · Qualifier 2",
+    "subtitle": "IPL 2026 · Maharaja Yadavindra Singh Stadium · 7:30 PM IST",
+    "disclaimer": "Generated before match start · May not reflect live events"
+  },
+  "chunks": [
+    {
+      "id": 1,
+      "label": "Stakes",
+      "title": "A spot in the Grand Final against RCB is at stake",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "This is a high-stakes knockout match where the winner books a place in the Grand Final against Royal Challengers Bengaluru on May 31. The loser is eliminated from the tournament."
+        },
+        {
+          "type": "highlight",
+          "content": "Winner moves on to face RCB in the Grand Final, loser goes home empty-handed."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Season snapshot",
+      "title": "Titans look to rebound while Royals ride Eliminator momentum",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Gujarat Titans finished the league stage in second place but are looking for a quick reset after a crushing 92-run defeat to RCB in Qualifier 1. Rajasthan Royals advanced after dominant batting from phenom Vaibhav Sooryavanshi cleared out Sunrisers Hyderabad by 47 runs in the Eliminator."
+        },
+        {
+          "type": "table",
+          "headers": [
+            { "text": "Team" },
+            { "text": "League Finish", "align": "c" },
+            { "text": "Recent Playoff", "align": "c" }
+          ],
+          "rows": [
+            ["Gujarat Titans", { "text": "2nd Place", "badge": "primary" }, { "text": "Lost Q1 vs RCB", "badge": "loss" }],
+            ["Rajasthan Royals", { "text": "4th Place", "badge": "secondary" }, { "text": "Won Eliminator", "badge": "win" }]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Head-to-head",
+      "title": "Titans lead recent history but Royals took the season opener",
+      "blocks": [
+        {
+          "type": "stat_row",
+          "items": [
+            { "label": "GT Wins (Recent)", "value": "7", "accent": "primary" },
+            { "label": "RR Wins (Recent)", "value": "3", "accent": "secondary" }
+          ]
+        },
+        {
+          "type": "table",
+          "headers": [
+            { "text": "Date" },
+            { "text": "Venue" },
+            { "text": "Result", "align": "c" }
+          ],
+          "rows": [
+            ["May 9, 2026", "Jaipur", { "text": "GT won by 77 runs", "badge": "primary" }],
+            ["Apr 4, 2026", "Ahmedabad", { "text": "RR won by 6 runs", "badge": "secondary" }]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Recent form",
+      "title": "Both teams searching for consistency in high pressure games",
+      "blocks": [
+        {
+          "type": "form_strip",
+          "teams": [
+            { "name": "Gujarat Titans", "results": ["W", "W", "W", "W", "L"] },
+            { "name": "Rajasthan Royals", "results": ["L", "L", "L", "L", "W"] }
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Gujarat Titans had a four-match winning streak snapped abruptly by RCB in Qualifier 1 where their bowling conceded a massive 254 runs. Rajasthan Royals ended a four-match losing skid with an emphatic win over SRH in the Eliminator."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Playing XI",
+      "title": "Both teams field strong line-ups for the knockout battle",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Rajasthan Royals: Yashasvi Jaiswal, Vaibhav Sooryavanshi, Dhruv Jurel, Riyan Parag, Donovan Ferreira, Dasun Shanaka, Ravindra Jadeja, Jofra Archer, Nandre Burger, Brijesh Sharma, Yash Punja."
+        },
+        {
+          "type": "text",
+          "content": "Gujarat Titans: Sai Sudharsan, Shubman Gill, Jos Buttler, Jason Holder, Washington Sundar, Nishant Sindhu, Rashid Khan, Sai Kishore, Kagiso Rabada, Prasidh Krishna, Mohammed Siraj."
+        },
+        {
+          "type": "alert",
+          "level": "warning",
+          "content": "Shubman Gill previously carried a minor leg injury while running between wickets in the league stage but continues to lead the side."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "label": "Bowling attack",
+      "title": "Titans pace stars face Royals explosive new ball threat",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Mohammed Siraj and Kagiso Rabada spearhead the Titans' attack alongside spin wizard Rashid Khan. Rajasthan relies on a lethal opening combinations from Jofra Archer and Nandre Burger to damage teams early."
+        },
+        {
+          "type": "table",
+          "headers": [
+            { "text": "Bowler" },
+            { "text": "Team" },
+            { "text": "Role", "align": "c" }
+          ],
+          "rows": [
+            ["Mohammed Siraj", "GT", { "text": "Pace", "badge": "neutral" }],
+            ["Rashid Khan", "GT", { "text": "Spin", "badge": "neutral" }],
+            ["Jofra Archer", "RR", { "text": "Pace", "badge": "neutral" }]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "label": "Key matchup",
+      "title": "The explosive prodigy meets India's premium pacer",
+      "blocks": [
+        {
+          "type": "matchup",
+          "home": { "name": "Mohammed Siraj", "role": "Gujarat Titans · Pace Bowler" },
+          "away": { "name": "Vaibhav Sooryavanshi", "role": "Rajasthan Royals · Opening Batsman" }
+        },
+        {
+          "type": "highlight",
+          "content": "Sooryavanshi has smashed 65 sixes this season. Siraj's ability to pick up early wickets in the powerplay will determine if GT can stall the Royals' explosive 11.66 powerplay run rate."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "label": "Venue & conditions",
+      "title": "New Chandigarh surface offers consistent carry with rain looming",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The surface at Maharaja Yadavindra Singh Stadium in New Chandigarh provides consistent bounce and good carry, helping batsmen get runs early. A slight rain threat looms over the venue for this evening match."
+        },
+        {
+          "type": "highlight",
+          "content": "Royals won the toss and elected to bat first to maximize their tournament-best powerplay scoring."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "label": "One to watch",
+      "title": "15-year old phenom Sooryavanshi holds the key for Royals",
+      "blocks": [
+        {
+          "type": "highlight",
+          "content": "Vaibhav Sooryavanshi is coming fresh off a brutal, viral 97-run playoff performance against SRH that blew the Eliminator wide open."
+        }
+      ]
+    }
+  ]
+}
