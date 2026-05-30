@@ -1,179 +1,263 @@
 {
-  "insight_id": "rajasthan-royals-vs-gujarat-titans-slug",
-  "event_id": "event-1",
-  "generated_at": "2026-05-29T17:15:00Z",
-  "meta": {
-    "title": "Rajasthan Royals vs Gujarat Titans · Qualifier 2",
-    "subtitle": "IPL 2026 · Maharaja Yadavindra Singh Stadium · Live",
-    "disclaimer": "Generated during early live play · Match in progress"
-  },
-  "chunks": [
-    {
-      "id": 1,
-      "label": "Stakes",
-      "title": "A direct ticket to the IPL 2026 Grand Final against RCB",
-      "blocks": [
-        {
-          "type": "text",
-          "content": "This is a straight knockout semifinal where everything is on the line. The winner earns the remaining spot in the Grand Final against Royal Challengers Bengaluru on May 31, while the loser is officially eliminated."
-        },
-        {
-          "type": "highlight",
-          "content": "Winner-takes-all clash to determine who challenges RCB for the title."
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "label": "Venue & conditions",
-      "title": "Royals break the template on a used Chandigarh pitch",
-      "blocks": [
-        {
-          "type": "text",
-          "content": "Rajasthan Royals won the controversial retake toss and boldly elected to bat first. Both captains expected the used surface to slow down considerably as the game progresses, making high middle-over spin a massive handicap for the chasing side."
-        },
-        {
-          "type": "highlight",
-          "content": "Rajasthan Royals won the toss and chose to bat first to exploit a slowing pitch."
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "label": "Season snapshot",
-      "title": "Top-two Titans seek redemption while Royals ride momentum",
-      "blocks": [
-        {
-          "type": "text",
-          "content": "Gujarat Titans look to wipe away a bruising 92-run defeat against RCB in Qualifier 1. Rajasthan Royals keep their playoff momentum going after comprehensively dismissing Sunrisers Hyderabad in the Eliminator match."
-        },
-        {
-          "type": "table",
-          "headers": [
-            { "text": "Team" },
-            { "text": "League Finish", "align": "c" },
-            { "text": "Last Playoff Result", "align": "c" }
-          ],
-          "rows": [
-            ["Gujarat Titans", { "text": "2nd Place", "badge": "primary" }, { "text": "Lost Q1 vs RCB", "badge": "loss" }],
-            ["Rajasthan Royals", { "text": "4th Place", "badge": "secondary" }, { "text": "Won Eliminator", "badge": "win" }]
-          ]
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "label": "Head-to-head",
-      "title": "Titans dominate long term but shared honors in 2026",
-      "blocks": [
-        {
-          "type": "stat_row",
-          "items": [
-            { "label": "All-Time H2H", "value": "GT 7-3 RR", "accent": "primary" }
-          ]
-        },
-        {
-          "type": "table",
-          "headers": [
-            { "text": "Date" },
-            { "text": "Winner" },
-            { "text": "Margin", "align": "c" }
-          ],
-          "rows": [
-            ["May 9, 2026", { "text": "Gujarat Titans", "badge": "primary" }, { "text": "By 77 runs", "badge": "neutral" }],
-            ["Apr 4, 2026", { "text": "Rajasthan Royals", "badge": "secondary" }, { "text": "By 6 runs", "badge": "neutral" }]
-          ]
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "label": "Recent form",
-      "title": "Titans leaking runs lately while Royals bounce back",
-      "blocks": [
-        {
-          "type": "form_strip",
-          "teams": [
-            { "name": "Gujarat Titans", "results": ["W", "W", "W", "W", "L"] },
-            { "name": "Rajasthan Royals", "results": ["L", "L", "L", "L", "W"] }
-          ]
-        },
-        {
-          "type": "text",
-          "content": "Gujarat's four-game win streak was snapped when they leaked 254 runs to RCB. Rajasthan broke a late four-game losing streak with their clutch victory in the Eliminator."
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "label": "Playing XI",
-      "title": "Confirmed lineups locked in with spin enforcement for GT",
-      "blocks": [
-        {
-          "type": "text",
-          "content": "Rajasthan Royals: Yashasvi Jaiswal, Vaibhav Sooryavanshi, Dhruv Jurel, Riyan Parag (c), Donovan Ferreira, Dasun Shanaka, Ravindra Jadeja, Jofra Archer, Nandre Burger, Brijesh Sharma, Yash Raj Punja."
-        },
-        {
-          "type": "text",
-          "content": "Gujarat Titans: Sai Sudharsan, Shubman Gill (c), Jos Buttler, Jason Holder, Washington Sundar, Nishant Sindhu, Rashid Khan, Sai Kishore, Kagiso Rabada, Prasidh Krishna, Mohammed Siraj."
-        },
-        {
-          "type": "alert",
-          "level": "info",
-          "content": "Gujarat Titans have tactical reinforcement, bringing in left-arm spinner R Sai Kishore on the used track."
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "label": "Bowling attack",
-      "title": "Titans middle over restriction meets Royals explosive openers",
-      "blocks": [
-        {
-          "type": "text",
-          "content": "Gujarat Titans have the most middle-over wickets (overs 7-15) this season alongside the highest dot-ball percentage. They will need to deploy Rashid Khan and Sai Kishore to claw back after powerplay damage."
-        },
-        {
-          "type": "table",
-          "headers": [
-            { "text": "Bowler" },
-            { "text": "Team" },
-            { "text": "Weapon", "align": "c" }
-          ],
-          "rows": [
-            ["Rashid Khan", "GT", { "text": "Middle-overs Spin", "badge": "primary" }],
-            ["Mohammed Siraj", "GT", { "text": "Powerplay Pace", "badge": "neutral" }],
-            ["Jofra Archer", "RR", { "text": "Death-overs Pace", "badge": "secondary" }]
-          ]
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "label": "Key matchup",
-      "title": "India's elite seamers vs Rajasthan's high-risk top order",
-      "blocks": [
-        {
-          "type": "matchup",
-          "home": { "name": "Mohammed Siraj", "role": "Gujarat Titans · Pace Bowler" },
-          "away": { "name": "Vaibhav Sooryavanshi", "role": "Rajasthan Royals · Opening Batsman" }
-        },
-        {
-          "type": "highlight",
-          "content": "If GT run into a firing top order, chasing on a turning used track will be a historic uphill task as they have lost 7 consecutive 210+ chases since 2025."
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "label": "One to watch",
-      "title": "The 15-year old batting marvel holds the keys",
-      "blocks": [
-        {
-          "type": "highlight",
-          "content": "Teenage phenom Vaibhav Sooryavanshi is the outright anchor for RR's explosive 10+ run rate style. His survival determines Rajasthan's safe ceiling."
-        }
-      ]
-    }
-  ]
+"insight_id": "rcb-vs-gt-ipl-2026-final",
+"event_id": "ipl-2026-74",
+"generated_at": "2026-05-30T09:21:27Z",
+"meta": {
+"title": "RCB vs GT · Final",
+"subtitle": "IPL 2026 · Narendra Modi Stadium, Ahmedabad · 7:30 PM",
+"disclaimer": "Generated before match start · May not reflect live events"
+},
+"chunks": [
+{
+"id": 1,
+"label": "Stakes",
+"title": "The Ultimate Summit Clash",
+"blocks": [
+{
+"type": "text",
+"content": "Defending champions Royal Challengers Bengaluru take on 2022 winners Gujarat Titans in the grand finale. RCB is chasing back-to-back titles, while GT looks to capitalize on their formidable home advantage."
+}
+]
+},
+{
+"id": 2,
+"label": "Season snapshot",
+"title": "Top Two Collide",
+"blocks": [
+{
+"type": "table",
+"headers": [
+{
+"text": "Team"
+},
+{
+"text": "Pts",
+"align": "c"
+},
+{
+"text": "NRR",
+"align": "c"
+}
+],
+"rows": [
+[
+"RCB",
+{
+"text": "18",
+"align": "c"
+},
+{
+"text": "+0.783",
+"align": "c"
+}
+],
+[
+"GT",
+{
+"text": "18",
+"align": "c"
+},
+{
+"text": "+0.695",
+"align": "c"
+}
+]
+]
+},
+{
+"type": "text",
+"content": "Both teams finished the league stage with 9 wins and 18 points, but RCB took the top spot on superior net run rate."
+}
+]
+},
+{
+"id": 3,
+"label": "Head-to-head",
+"title": "Fierce Recent Rivalry",
+"blocks": [
+{
+"type": "stat_row",
+"items": [
+{
+"label": "RCB Wins (Season)",
+"value": "2",
+"accent": "primary"
+},
+{
+"label": "GT Wins (Season)",
+"value": "1",
+"accent": "secondary"
+}
+]
+},
+{
+"type": "table",
+"headers": [
+{
+"text": "Date"
+},
+{
+"text": "Result",
+"align": "c"
+}
+],
+"rows": [
+[
+"May 26 (Q1)",
+{
+"text": "RCB won by 92 runs",
+"badge": "win"
+}
+],
+[
+"May 21",
+{
+"text": "GT won by 89 runs",
+"badge": "loss"
+}
+]
+]
+}
+]
+},
+{
+"id": 4,
+"label": "Recent form",
+"title": "Momentum Heading In",
+"blocks": [
+{
+"type": "form_strip",
+"teams": [
+{
+"name": "RCB",
+"results": [
+"W",
+"W",
+"W",
+"L",
+"W"
+]
+},
+{
+"name": "GT",
+"results": [
+"W",
+"L",
+"W",
+"L",
+"W"
+]
+}
+]
+},
+{
+"type": "text",
+"content": "RCB enter with immense confidence after brushing GT aside in Qualifier 1, whereas GT bounced back strongly against RR in Qualifier 2."
+}
+]
+},
+{
+"id": 5,
+"label": "Playing XI",
+"title": "Expected Lineups",
+"blocks": [
+{
+"type": "text",
+"content": "RCB: V. Kohli, F. du Plessis, R. Patidar (c), G. Maxwell, C. Green, D. Karthik (wk), M. Lomror, K. Sharma, M. Siraj, Y. Dayal, L. Ferguson."
+},
+{
+"type": "text",
+"content": "GT: S. Gill (c), S. Sudharsan, S. Khan, D. Miller, R. Tewatia, R. Khan, N. Ahmad, M. Sharma, J. Little, U. Yadav, W. Saha (wk)."
+},
+{
+"type": "alert",
+"level": "info",
+"content": "Both teams are expected to field unchanged sides with no fresh injuries reported."
+}
+]
+},
+{
+"id": 6,
+"label": "Bowling attack",
+"title": "Pace vs Spin",
+"blocks": [
+{
+"type": "table",
+"headers": [
+{
+"text": "RCB Key Threats"
+},
+{
+"text": "GT Key Threats",
+"align": "c"
+}
+],
+"rows": [
+[
+"Mohammed Siraj",
+{
+"text": "Rashid Khan",
+"align": "c"
+}
+],
+[
+"Yash Dayal",
+{
+"text": "Mohit Sharma",
+"align": "c"
+}
+]
+]
+},
+{
+"type": "text",
+"content": "GT's spin duo will look to control the middle overs, while RCB relies heavily on early powerplay strikes."
+}
+]
+},
+{
+"id": 7,
+"label": "Key matchup",
+"title": "The Decisive Battle",
+"blocks": [
+{
+"type": "matchup",
+"home": {
+"name": "Virat Kohli",
+"role": "RCB · Opener"
+},
+"away": {
+"name": "Rashid Khan",
+"role": "GT · Spin Bowler"
+}
+},
+{
+"type": "highlight",
+"content": "Kohli's ability to navigate Rashid's four overs in the middle phase could dictate the tempo of RCB's innings."
+}
+]
+},
+{
+"id": 8,
+"label": "Venue & conditions",
+"title": "Ahmedabad's Home Edge",
+"blocks": [
+{
+"type": "text",
+"content": "Narendra Modi Stadium generally offers a good batting surface, but the pressure of a final often makes chasing tricky. RCB has great memories here after lifting their maiden trophy at this venue in 2025."
+}
+]
+},
+{
+"id": 9,
+"label": "One to watch",
+"title": "Captains Leading",
+"blocks": [
+{
+"type": "highlight",
+"content": "Shubman Gill has been in blistering touch for GT, scoring 43 off 18 in a recent chase against RCB at this very venue."
+}
+]
+}
+]
 }
