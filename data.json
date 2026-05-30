@@ -1,119 +1,72 @@
 {
-"insight_id": "rcb-vs-gt-ipl-2026-final",
+"insight_id": "rcb-vs-gt-ipl-2026-final-ua",
 "event_id": "ipl-2026-74",
-"generated_at": "2026-05-30T09:21:27Z",
+"generated_at": "2026-05-30T12:12:37Z",
 "meta": {
-"title": "RCB vs GT · Final",
-"subtitle": "IPL 2026 · Narendra Modi Stadium, Ahmedabad · 7:30 PM",
-"disclaimer": "Generated before match start · May not reflect live events"
+"title": "RCB проти GT · Фінал",
+"subtitle": "IPL 2026 · Стадіон Ахмедабад · 19:30",
+"disclaimer": "Згенеровано до початку матчу · Ситуація може змінитись"
 },
 "chunks": [
 {
 "id": 1,
-"label": "Stakes",
-"title": "The Ultimate Summit Clash",
+"label": "Головне",
+"title": "Битва на знайомому полі",
 "blocks": [
 {
 "type": "text",
-"content": "Defending champions Royal Challengers Bengaluru take on 2022 winners Gujarat Titans in the grand finale. RCB is chasing back-to-back titles, while GT looks to capitalize on their formidable home advantage."
+"content": "GT грають вдома, де знають кожен метр. Але RCB не мають страху: саме на цьому стадіоні вони виграли трофей минулого року. Психологічно обидві команди готові на 100%."
 }
 ]
 },
 {
 "id": 2,
-"label": "Season snapshot",
-"title": "Top Two Collide",
+"label": "Фактор стадіону",
+"title": "Секрети арени в Ахмедабаді",
 "blocks": [
 {
-"type": "table",
-"headers": [
-{
-"text": "Team"
-},
-{
-"text": "Pts",
-"align": "c"
-},
-{
-"text": "NRR",
-"align": "c"
-}
-],
-"rows": [
-[
-"RCB",
-{
-"text": "18",
-"align": "c"
-},
-{
-"text": "+0.783",
-"align": "c"
-}
-],
-[
-"GT",
-{
-"text": "18",
-"align": "c"
-},
-{
-"text": "+0.695",
-"align": "c"
-}
-]
-]
-},
-{
 "type": "text",
-"content": "Both teams finished the league stage with 9 wins and 18 points, but RCB took the top spot on superior net run rate."
+"content": "Поле тут дуже велике. Бити м'яч далеко за межі важко. Переможе та команда, яка краще і швидше бігає між вікетами, а не просто покладається на сильні удари."
+},
+{
+"type": "highlight",
+"content": "100 тисяч фанатів шалено підтримуватимуть місцевих GT. Це створює величезний тиск на гостей."
 }
 ]
 },
 {
 "id": 3,
-"label": "Head-to-head",
-"title": "Fierce Recent Rivalry",
+"label": "Impact Players",
+"title": "Таємна зброя команд",
 "blocks": [
 {
-"type": "stat_row",
-"items": [
-{
-"label": "RCB Wins (Season)",
-"value": "2",
-"accent": "primary"
-},
-{
-"label": "GT Wins (Season)",
-"value": "1",
-"accent": "secondary"
-}
-]
+"type": "text",
+"content": "Impact Player (гравець заміни) вирішує долю матчів. Вони виходять на поле у найкритичніший момент, щоб зламати план суперника."
 },
 {
 "type": "table",
 "headers": [
 {
-"text": "Date"
+"text": "Команда"
 },
 {
-"text": "Result",
+"text": "Головний джокер",
 "align": "c"
 }
 ],
 "rows": [
 [
-"May 26 (Q1)",
+"GT",
 {
-"text": "RCB won by 92 runs",
-"badge": "win"
+"text": "Мохіт Шарма",
+"badge": "primary"
 }
 ],
 [
-"May 21",
+"RCB",
 {
-"text": "GT won by 89 runs",
-"badge": "loss"
+"text": "Раджат Патідар",
+"badge": "secondary"
 }
 ]
 ]
@@ -122,8 +75,34 @@
 },
 {
 "id": 4,
-"label": "Recent form",
-"title": "Momentum Heading In",
+"label": "Аналіз джокерів",
+"title": "Як вони приносять перемоги",
+"blocks": [
+{
+"type": "stat_row",
+"items": [
+{
+"label": "Вікети Мохіта",
+"value": "24",
+"accent": "primary"
+},
+{
+"label": "Страйк-рейт Патідара",
+"value": "175",
+"accent": "secondary"
+}
+]
+},
+{
+"type": "text",
+"content": "Мохіт (GT) майстерно кидає в кінці матчу. Він уповільнює м'яч і змушує суперників помилятися. Патідар (RCB) виходить відбивати після втрати перших гравців і відразу грає дуже агресивно."
+}
+]
+},
+{
+"id": 5,
+"label": "Остання форма",
+"title": "Шлях до фіналу",
 "blocks": [
 {
 "type": "form_strip",
@@ -149,113 +128,40 @@
 ]
 }
 ]
-},
-{
-"type": "text",
-"content": "RCB enter with immense confidence after brushing GT aside in Qualifier 1, whereas GT bounced back strongly against RR in Qualifier 2."
-}
-]
-},
-{
-"id": 5,
-"label": "Playing XI",
-"title": "Expected Lineups",
-"blocks": [
-{
-"type": "text",
-"content": "RCB: V. Kohli, F. du Plessis, R. Patidar (c), G. Maxwell, C. Green, D. Karthik (wk), M. Lomror, K. Sharma, M. Siraj, Y. Dayal, L. Ferguson."
-},
-{
-"type": "text",
-"content": "GT: S. Gill (c), S. Sudharsan, S. Khan, D. Miller, R. Tewatia, R. Khan, N. Ahmad, M. Sharma, J. Little, U. Yadav, W. Saha (wk)."
-},
-{
-"type": "alert",
-"level": "info",
-"content": "Both teams are expected to field unchanged sides with no fresh injuries reported."
 }
 ]
 },
 {
 "id": 6,
-"label": "Bowling attack",
-"title": "Pace vs Spin",
+"label": "Ключова дуель",
+"title": "Вірат проти Рашида",
 "blocks": [
 {
-"type": "table",
-"headers": [
-{
-"text": "RCB Key Threats"
+"type": "matchup",
+"home": {
+"name": "Вірат Колі",
+"role": "RCB · Відбиваючий"
+},
+"away": {
+"name": "Рашид Хан",
+"role": "GT · Боулер"
+}
 },
 {
-"text": "GT Key Threats",
-"align": "c"
-}
-],
-"rows": [
-[
-"Mohammed Siraj",
-{
-"text": "Rashid Khan",
-"align": "c"
-}
-],
-[
-"Yash Dayal",
-{
-"text": "Mohit Sharma",
-"align": "c"
-}
-]
-]
-},
-{
-"type": "text",
-"content": "GT's spin duo will look to control the middle overs, while RCB relies heavily on early powerplay strikes."
+"type": "highlight",
+"content": "Якщо Колі спокійно відіб'є подачі хитрого Хана без втрати вікета, RCB легко контролюватимуть середину гри."
 }
 ]
 },
 {
 "id": 7,
-"label": "Key matchup",
-"title": "The Decisive Battle",
+"label": "Ризики",
+"title": "Важливі новини",
 "blocks": [
 {
-"type": "matchup",
-"home": {
-"name": "Virat Kohli",
-"role": "RCB · Opener"
-},
-"away": {
-"name": "Rashid Khan",
-"role": "GT · Spin Bowler"
-}
-},
-{
-"type": "highlight",
-"content": "Kohli's ability to navigate Rashid's four overs in the middle phase could dictate the tempo of RCB's innings."
-}
-]
-},
-{
-"id": 8,
-"label": "Venue & conditions",
-"title": "Ahmedabad's Home Edge",
-"blocks": [
-{
-"type": "text",
-"content": "Narendra Modi Stadium generally offers a good batting surface, but the pressure of a final often makes chasing tricky. RCB has great memories here after lifting their maiden trophy at this venue in 2025."
-}
-]
-},
-{
-"id": 9,
-"label": "One to watch",
-"title": "Captains Leading",
-"blocks": [
-{
-"type": "highlight",
-"content": "Shubman Gill has been in blistering touch for GT, scoring 43 off 18 in a recent chase against RCB at this very venue."
+"type": "alert",
+"level": "warning",
+"content": "Увага: Гленн Максвелл (RCB) відчув біль у спині. Його участь у фіналі наразі під питанням."
 }
 ]
 }
