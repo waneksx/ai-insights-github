@@ -1,56 +1,56 @@
 {
-"insight_id": "rcb-vs-gt-ipl-2026-final-ua",
+"insight_id": "rcb-vs-gt-ipl-final-en",
 "event_id": "ipl-2026-74",
-"generated_at": "2026-05-30T12:12:37Z",
+"generated_at": "2026-05-30T12:17:44Z",
 "meta": {
-"title": "RCB проти GT · Фінал",
-"subtitle": "IPL 2026 · Стадіон Ахмедабад · 19:30",
-"disclaimer": "Згенеровано до початку матчу · Ситуація може змінитись"
+"title": "RCB vs GT · Final",
+"subtitle": "IPL · Ahmedabad Stadium · 7:30 PM",
+"disclaimer": "Generated before match start · May not reflect live events"
 },
 "chunks": [
 {
 "id": 1,
-"label": "Головне",
-"title": "Битва на знайомому полі",
+"label": "The Stakes",
+"title": "Battle on Familiar Ground",
 "blocks": [
 {
 "type": "text",
-"content": "GT грають вдома, де знають кожен метр. Але RCB не мають страху: саме на цьому стадіоні вони виграли трофей минулого року. Психологічно обидві команди готові на 100%."
+"content": "GT plays at home where they know every inch of the pitch. However, RCB is fearless here, having lifted the trophy at this exact venue last year. Both teams are mentally peaked."
 }
 ]
 },
 {
 "id": 2,
-"label": "Фактор стадіону",
-"title": "Секрети арени в Ахмедабаді",
+"label": "Venue Insider",
+"title": "Secrets of the Ahmedabad Arena",
 "blocks": [
 {
 "type": "text",
-"content": "Поле тут дуже велике. Бити м'яч далеко за межі важко. Переможе та команда, яка краще і швидше бігає між вікетами, а не просто покладається на сильні удари."
+"content": "This outfield is massive, making boundary-hitting difficult. The team that sprints hard between the wickets and limits dot balls will have a massive edge over pure power hitters."
 },
 {
 "type": "highlight",
-"content": "100 тисяч фанатів шалено підтримуватимуть місцевих GT. Це створює величезний тиск на гостей."
+"content": "Over 100,000 local fans will be roaring for GT, creating an intense, high-pressure cauldron for the visitors."
 }
 ]
 },
 {
 "id": 3,
 "label": "Impact Players",
-"title": "Таємна зброя команд",
+"title": "The Secret Weapons",
 "blocks": [
 {
 "type": "text",
-"content": "Impact Player (гравець заміни) вирішує долю матчів. Вони виходять на поле у найкритичніший момент, щоб зламати план суперника."
+"content": "Impact Players are deciding matches this season. They sub in during the most critical moments to completely break the opponent's rhythm."
 },
 {
 "type": "table",
 "headers": [
 {
-"text": "Команда"
+"text": "Team"
 },
 {
-"text": "Головний джокер",
+"text": "Main Joker Card",
 "align": "c"
 }
 ],
@@ -58,14 +58,14 @@
 [
 "GT",
 {
-"text": "Мохіт Шарма",
+"text": "Mohit Sharma",
 "badge": "primary"
 }
 ],
 [
 "RCB",
 {
-"text": "Раджат Патідар",
+"text": "Rajat Patidar",
 "badge": "secondary"
 }
 ]
@@ -75,19 +75,19 @@
 },
 {
 "id": 4,
-"label": "Аналіз джокерів",
-"title": "Як вони приносять перемоги",
+"label": "Player Roles",
+"title": "How The Jokers Win Games",
 "blocks": [
 {
 "type": "stat_row",
 "items": [
 {
-"label": "Вікети Мохіта",
+"label": "Mohit Wickets",
 "value": "24",
 "accent": "primary"
 },
 {
-"label": "Страйк-рейт Патідара",
+"label": "Patidar Strike Rate",
 "value": "175",
 "accent": "secondary"
 }
@@ -95,14 +95,14 @@
 },
 {
 "type": "text",
-"content": "Мохіт (GT) майстерно кидає в кінці матчу. Він уповільнює м'яч і змушує суперників помилятися. Патідар (RCB) виходить відбивати після втрати перших гравців і відразу грає дуже агресивно."
+"content": "Mohit (GT) is a master at the death overs, using slow balls to force bad shots. Patidar (RCB) comes out swinging if early wickets fall, instantly shifting momentum back to his team."
 }
 ]
 },
 {
 "id": 5,
-"label": "Остання форма",
-"title": "Шлях до фіналу",
+"label": "Recent Form",
+"title": "The Road to the Final",
 "blocks": [
 {
 "type": "form_strip",
@@ -133,35 +133,35 @@
 },
 {
 "id": 6,
-"label": "Ключова дуель",
-"title": "Вірат проти Рашида",
+"label": "Key Matchup",
+"title": "Kohli vs Rashid",
 "blocks": [
 {
 "type": "matchup",
 "home": {
-"name": "Вірат Колі",
-"role": "RCB · Відбиваючий"
+"name": "Virat Kohli",
+"role": "RCB · Batter"
 },
 "away": {
-"name": "Рашид Хан",
-"role": "GT · Боулер"
+"name": "Rashid Khan",
+"role": "GT · Spin Bowler"
 }
 },
 {
 "type": "highlight",
-"content": "Якщо Колі спокійно відіб'є подачі хитрого Хана без втрати вікета, RCB легко контролюватимуть середину гри."
+"content": "If Kohli can safely navigate Rashid's tricky spin without getting out, RCB will easily control the middle of the game."
 }
 ]
 },
 {
 "id": 7,
-"label": "Ризики",
-"title": "Важливі новини",
+"label": "Risks & Alerts",
+"title": "Crucial Fitness News",
 "blocks": [
 {
 "type": "alert",
 "level": "warning",
-"content": "Увага: Гленн Максвелл (RCB) відчув біль у спині. Його участь у фіналі наразі під питанням."
+"content": "Glenn Maxwell (RCB) is dealing with back pain. His availability for the final is currently doubtful."
 }
 ]
 }
